@@ -9,10 +9,14 @@
     padding: 0;
 }
 @import 'base/variables';
+@import 'base/mixins';
 
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+h1, h2, h3 {
+    margin: 0;
 }
 
 @import 'blocks/divider';
@@ -29,3 +33,5 @@
 @import 'blocks/agent';
 @import 'blocks/prices';
 @import 'blocks/form';
+@import 'blocks/manager';
+@import 'blocks/scheme';

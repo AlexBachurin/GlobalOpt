@@ -1,0 +1,21 @@
+.manager {
+    background: url("../img/managerBG.jpg") center (center/cover) no-repeat;
+    color: $text-color;
+    &__bgwrapper {
+        @include bgwrapper;
+    }
+    &__bgoverlay {
+        @include bgoverlay;
+    }
+    &__title {
+        color: $text-color;
+    }
+
+    &__subtitle {
+        padding: 0 108px 0 108px;
+        text-align: center;
+        font-size: 19px;
+        line-height: 27px;
+        font-weight: 300;
+    }
+}

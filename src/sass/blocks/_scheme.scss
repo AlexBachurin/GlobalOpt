@@ -1,0 +1,25 @@
+.scheme {
+    padding: 50px 0;
+    &__wrapper {
+        margin-top: 33px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 260px);
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        column-gap: 30px;
+    }
+    &__subwrapper {
+        padding: 44px 175px 0 160px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 260px);
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        column-gap: 10px;
+        
+    }
+    &__item {
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+}
