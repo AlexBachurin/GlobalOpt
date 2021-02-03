@@ -1,0 +1,31 @@
+.about {
+    padding: 51px 0 60px 0;
+    &__wrapper {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 360px);
+        grid-template-rows: minmax(400px, auto);
+        grid-auto-rows: minmax(400px, auto);
+        column-gap: 30px;
+    }
+    &__subtitle {
+        padding: 0 130px;
+    }
+
+    &__img {
+        max-width: 360px;
+        width: 100%;
+        height: 210px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    &__descr {
+        margin-top: 30px;
+        h3 {
+            text-align: center;
+        }
+    }
+}

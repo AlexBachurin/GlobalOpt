@@ -1,0 +1,27 @@
+.form {
+    position: relative;
+    border: 1px solid #898989;
+    width: 100%;
+    display: flex;
+    &-item {
+        width: 270px;
+        margin-right: 5px;
+        border-radius: 15px;
+        input {
+            width: 100%;
+            border-radius: 15px;
+            padding: 10px 0 11px 20px;
+            opacity: 0.7;
+            font-size: 13px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #101010;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            &:focus {
+                opacity: 1;
+                outline: none;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
