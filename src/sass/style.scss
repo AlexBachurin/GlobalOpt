@@ -10,8 +10,10 @@
 }
 @import 'base/variables';
 @import 'base/mixins';
+@import 'libs/tiny-slider';
 
 .container {
+    position: relative;
     width: 1140px;
     margin: 0 auto;
 }
@@ -35,3 +37,4 @@ h1, h2, h3 {
 @import 'blocks/form';
 @import 'blocks/manager';
 @import 'blocks/scheme';
+@import 'blocks/reviews';
