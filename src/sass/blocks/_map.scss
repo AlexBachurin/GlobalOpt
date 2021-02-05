@@ -1,0 +1,56 @@
+.map {
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+    background: url("../img/map.jpg") center (center/cover) no-repeat;
+    
+    &__marker {
+        position: absolute;
+        top: 224px;
+        left: 756px;
+        cursor: pointer;
+        transition: all 1s ease-in;
+        &-logo {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__descr {
+        display: none;
+        background: url("../img/mapdescr_bg.jpg");
+        width: 329px;
+        height: 158px;
+        position: absolute;
+        top: 171px;
+        left: 833px;
+        padding: 27px 49px 28px 26px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #3a3a3a;
+        span {
+            display: block;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            color: $orange-color;
+            margin-bottom: 5px;
+        }
+        a {
+            margin-top: 3px;
+            display: block;
+            font-size: 14px;
+            font-weight: 300;
+            text-decoration: underline;
+            color: $orange-color
+        }
+    }
+}
+
+.active {
+    display: block;
+}

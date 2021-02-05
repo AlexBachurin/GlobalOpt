@@ -17,3 +17,11 @@
     slider.goTo('next');
   });
   
+  //show Map Info
+
+  const marker = document.querySelector('.map__marker');
+  const markerDescr = document.querySelector('.map__descr');
+
+  marker.addEventListener('click', () => {
+        markerDescr.classList.toggle('active');
+  })

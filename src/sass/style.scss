@@ -14,6 +14,7 @@
 
 .container {
     position: relative;
+    height: 100%;
     width: 1140px;
     margin: 0 auto;
 }
@@ -38,3 +39,6 @@ h1, h2, h3 {
 @import 'blocks/manager';
 @import 'blocks/scheme';
 @import 'blocks/reviews';
+@import 'blocks/contactUs';
+@import 'blocks/map';
+@import 'blocks/footer';

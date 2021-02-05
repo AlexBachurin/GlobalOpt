@@ -23,5 +23,18 @@
                 border: 1px solid rgba(0, 0, 0, 0.5);
             }
         }
+        textarea {
+            width: 815px;
+            height: 73px;
+            background-color: $text-color;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding-top: 19px;
+            padding-left: 26px;
+            font-size: 13px;
+            font-weight: 300;
+            color: #616467;
+            opacity: 0.7;
+            resize: none;
+        }
     }
 }
