@@ -25,3 +25,20 @@
   marker.addEventListener('click', () => {
         markerDescr.classList.toggle('active');
   })
+
+  //menu
+
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.navigation__menu');
+  const overlay = document.querySelector('.navigation__overlay');
+
+
+  hamburger.addEventListener('click' ,() => {
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('close');
+  })
+
+  overlay.addEventListener('click', () => {
+    menu.classList.remove('active');
+    hamburger.classList.remove('close');
+  })  

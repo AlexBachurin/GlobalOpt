@@ -10,21 +10,32 @@
 </head>
 
 <body>
+    <div class="hamburger">
+        <span class="first" ></span>
+        <span class="middle"></span>
+        <span class="last"></span>
+    </div>
     <header class="header">
         <div class="header__wrapper">
             <div class="container">
                 <div class="navigation">
                     <div class="navigation__logo"><img src="icons/logo.png" alt="mainlogo"></div>
-                    <nav class="navigation__nav">
-                        <ul class="navigation__list">
-                            <li><a href="#advantages" class="navigation__link"> Преимущества</a></li>
-                            <li><a href="#about" class="navigation__link">Наша работа</a></li>
-                            <li><a href="#prices" class="navigation__link"> Цены</a> </li>
-                            <li><a href="#scheme" class="navigation__link">Схема работы</a> </li>
-                            <li><a href="#reviews" class="navigation__link"> Отзывы</a></li>
-                            <li><a href="#contacts" class="navigation__link"> Контакты</a></li>
-                        </ul>
-                    </nav>
+                    <div class="navigation__menu">
+                        <div class="navigation__menu-block">
+                            <nav class="navigation__nav">
+                                <ul class="navigation__list">
+                                    <li><a href="#advantages" class="navigation__link"> Преимущества</a></li>
+                                    <li><a href="#about" class="navigation__link">Наша работа</a></li>
+                                    <li><a href="#prices" class="navigation__link"> Цены</a> </li>
+                                    <li><a href="#scheme" class="navigation__link">Схема работы</a> </li>
+                                    <li><a href="#reviews" class="navigation__link"> Отзывы</a></li>
+                                    <li><a href="#contacts" class="navigation__link"> Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="navigation__overlay"></div>
+                    </div>
+                   <div class="navigation__contacts-wrapper">
                     <div class="navigation__contacts">
                         <div class="navigation__questions">
                             Есть вопросы?
@@ -32,45 +43,51 @@
                         <a href="" class="navigation__phone">+7 (926) 423 01 00</a>
                     </div>
                     <button class="btn navigation__btn buzz-out-on-hover ">Перезвоните мне</button>
+                   </div>
                 </div>
 
                 <div class="promo">
-                    <h2 class="promo__firm">
-                        Global Opt - логистика полного цикла из Китая в Россию
-                    </h2>
-                    <h1 class="promo__title">
-                        ДОСТАВКА ГРУЗОВ ИЗ КИТАЯ
-                    </h1>
-                    <div class="promo__subtitle">
-                        В РОССИЮ И СНГ ВСЕМИ ВИДАМИ ТРАНСПОРТА
-                    </div>
-                    <div class="promo__divider">
-                        <div class="promo__divider-plank promo__divider-plank_1"></div>
-                        <div class="promo__divider-plank promo__divider-plank_2"></div>
-
-                    </div>
-                    <div class="promo__wrapper">
-                        <div class="promo__item">
-                            <div class="promo__icon"><img src="icons/transport.png" alt="transporting"></div>
-                            <div class="promo__text promo__text_mt19">Перевозка негабаритных и крупнотоннажных грузов
+                    <div class="promo__outerwrapper">
+                        <h2 class="promo__firm">
+                            Global Opt - логистика полного цикла из Китая в Россию
+                        </h2>
+                        <h1 class="promo__title">
+                            ДОСТАВКА ГРУЗОВ ИЗ КИТАЯ
+                        </h1>
+                        <div class="promo__subtitle">
+                            В РОССИЮ И СНГ ВСЕМИ ВИДАМИ ТРАНСПОРТА
+                        </div>
+                        <div class="promo__divider">
+                            <div class="promo__divider-plank promo__divider-plank_1"></div>
+                            <div class="promo__divider-plank promo__divider-plank_2"></div>
+                            <!-- <div class="promo__divider-wrapper">
+                                <div class="promo__divider-circle"></div>
+                            </div> -->
+    
+                        </div>
+                        <div class="promo__wrapper">
+                            <div class="promo__item">
+                                <div class="promo__icon"><img src="icons/transport.png" alt="transporting"></div>
+                                <div class="promo__text promo__text_mt19">Перевозка негабаритных и крупнотоннажных грузов
+                                </div>
+                            </div>
+                            <div class="promo__item">
+                                <div class="promo__icon"><img src="icons/clear.png" alt="clear"></div>
+                                <div class="promo__text promo__text_mt13">Самостоятельно декларируем и проводим таможенную
+                                    очистку с оптимизацией
+                                    кодов и ставок</div>
+                            </div>
+                            <div class="promo__item">
+                                <div class="promo__icon"><img src="icons/delivery.png" alt="delivery"></div>
+                                <div class="promo__text">Осуществляем прямые поставки с заводов от двери до двери</div>
+                            </div>
+                            <div class="promo__item">
+                                <div class="promo__icon"><img src="icons/express.png" alt="express"></div>
+                                <div class="promo__text">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</div>
                             </div>
                         </div>
-                        <div class="promo__item">
-                            <div class="promo__icon"><img src="icons/clear.png" alt="clear"></div>
-                            <div class="promo__text promo__text_mt13">Самостоятельно декларируем и проводим таможенную
-                                очистку с оптимизацией
-                                кодов и ставок</div>
-                        </div>
-                        <div class="promo__item">
-                            <div class="promo__icon"><img src="icons/delivery.png" alt="delivery"></div>
-                            <div class="promo__text">Осуществляем прямые поставки с заводов от двери до двери</div>
-                        </div>
-                        <div class="promo__item">
-                            <div class="promo__icon"><img src="icons/express.png" alt="express"></div>
-                            <div class="promo__text">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</div>
-                        </div>
+    
                     </div>
-
                     <div class="promo__btn-wrapper">
                         <button class="btn promo__btn buzz-out-on-hover">
                             Получить расчет
@@ -432,6 +449,7 @@
     </section>
     <section class="reviews" id="reviews">
         <div class="container">
+           <div class="reviews__wrapper">
             <h2 class="title reviews__title">
                 отзывы наших клиентов
             </h2>
@@ -480,6 +498,7 @@
             </button>
 
            
+           </div>
         </div>
     </section>
     <section class="contactUs" id="contacts">
@@ -506,7 +525,7 @@
                                 <input type="email" name="email" id="email" placeholder="Ваша почта" required>
                             </div>
                         </div>
-                        <div class="form-item">
+                        <div class="form-item form-item_text">
                             <label for="text"></label>
                             <textarea name="text" id="text" placeholder="Сообщение"></textarea>
                         </div>

@@ -13,7 +13,6 @@
 @import 'libs/tiny-slider';
 
 .container {
-    position: relative;
     height: 100%;
     width: 1140px;
     margin: 0 auto;
@@ -21,7 +20,11 @@
 h1, h2, h3 {
     margin: 0;
 }
+.body {
+    position: relative;
+}
 
+@import 'blocks/hamburger';
 @import 'blocks/divider';
 @import 'blocks/title';
 @import 'blocks/subtitle';
@@ -42,3 +45,4 @@ h1, h2, h3 {
 @import 'blocks/contactUs';
 @import 'blocks/map';
 @import 'blocks/footer';
+@import 'blocks/media';
