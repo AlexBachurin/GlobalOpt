@@ -31,6 +31,7 @@
   const hamburger = document.querySelector('.hamburger');
   const menu = document.querySelector('.navigation__menu');
   const overlay = document.querySelector('.navigation__overlay');
+  const links = document.querySelectorAll('.navigation__link');
 
 
   hamburger.addEventListener('click' ,() => {
@@ -41,4 +42,12 @@
   overlay.addEventListener('click', () => {
     menu.classList.remove('active');
     hamburger.classList.remove('close');
-  })  
+  }) 
+  
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+      hamburger.classList.remove('close');
+    })
+  })
+   

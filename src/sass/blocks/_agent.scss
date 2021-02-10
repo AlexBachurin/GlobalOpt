@@ -1,6 +1,6 @@
 .agent {
     position: relative;
-    height: 342px;
+    min-height: 342px;
     background: url("../img/agent_bg.jpg") center (center/cover) no-repeat;
     &__bgwrapper {
         // height: 100%;

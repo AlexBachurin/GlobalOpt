@@ -77,7 +77,6 @@
         &__wrapper {
             justify-content: center;
         }
-        
     }
     .scheme {
         &__wrapper {
@@ -105,7 +104,7 @@
         }
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .container {
         width: 720px;
     }
@@ -126,19 +125,18 @@
             font-size: 36px;
         }
         &__divider {
+            width: 720px;
             &-plank {
                 width: 340px;
             }
             &::after {
-                left: 350px;
-                left: 44%;
-                 transform: translate(-44%,-50%);
-             }
+                left: 50%;
+                transform: translate(-70%, -50%);
+            }
         }
         &__wrapper {
             justify-content: space-evenly;
         }
-       
     }
     .advantages {
         &__wrapper {
@@ -157,6 +155,279 @@
     .prices {
         &__wrapper {
             justify-content: center;
+        }
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .scheme {
+        &__subwrapper {
+            grid-template-columns: repeat(auto-fit, 260px);
+            place-items: center;
+            row-gap: 20px;
+            column-gap: 30px;
+        }
+        &__item {
+            &:nth-child(4) {
+                grid-column: auto;
+            }
+        }
+    }
+    .reviews {
+        &__slider-prev,
+        &__slider-next {
+            top: 52%;
+            transform: translateY(-52%);
+        }
+    }
+    .contactUs {
+        &__form-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-item {
+            width: 394px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo {
+        &__firm {
+            font-size: 20px;
+        }
+        &__subtitle {
+            font-size: 32px;
+        }
+        &__divider {
+            width: 540px;
+            &::after {
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .about {
+        &__subtitle {
+            padding: 0 0;
+        }
+    }
+    .item {
+        &__descr {
+            font-size: 15px;
+        }
+        &__title {
+            margin-bottom: 5px;
+        }
+    }
+    .agent {
+        &__subtitle {
+            font-size: 18px;
+        }
+        .container {
+            padding: 0;
+        }
+    }
+    .prices {
+        &__subtitle {
+            padding: 0;
+            text-align: center;
+        }
+    }
+    .scheme {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 260px);
+            column-gap: 20px;
+        }
+        &__subwrapper {
+            column-gap: 20px;
+        }
+    }
+    .contactUs {
+        &__wrapper {
+            padding: 50px 50px 79px 50px;
+        }
+    }
+    .reviews {
+        &__slider-item {
+            width: 100%;
+        }
+        &__slider-prev,
+        &__slider-next {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .map {
+        &__marker {
+            left: 60px;
+        }
+        &__descr {
+            left: 125px;
+        }
+    }
+    .footer {
+        &__contacts-wrapper {
+            flex-direction: column;
+
+        }
+        &__contacts {
+            margin-right: 0;
+        }
+        &__creator {
+            display: flex;
+            align-items: center;
+            
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .close {
+        left: 238px;
+    }
+    .navigation {
+        &__menu-block {
+            width: 280px;
+            padding-left: 20px;
+        }
+    }
+    .form {
+        min-height: 350px;
+        padding: 10px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    .navigation {
+        &__contacts-wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__contacts {
+            margin-right: 0;
+            padding-bottom: 10px;
+        }
+        &__logo {
+            margin-left: 0;
+        }
+    }
+    .promo{
+        &__firm {
+            font-size: 18px;
+        }
+        &__title {
+            font-size: 52px;
+        }
+        &__subtitle {
+            font-size: 30px;
+        }
+        &__divider {
+            width: 295px;
+        }
+        
+    }
+    .advantages {
+        &__wrapper {
+            padding: 0 15px;
+        }
+        &__descr {
+            padding-left: 0;
+        }
+    }
+    .about {
+        padding-bottom: 30px;
+        &__wrapper {
+            grid-template-columns: 290px;
+            row-gap: 10px;
+        }
+        &__img {
+            height: auto;
+        }
+        &__descr {
+            margin-top: 15px;
+        }
+    }
+    .agent {
+        &__bgoverlay {
+            padding: 58px 15px 75px 15px;
+        }
+    }
+    .manager {
+        &__subtitle {
+            padding: 0;
+        }
+    }
+    .scheme {
+        padding-bottom: 0;
+        &__wrapper {
+            justify-content: center;
+        }
+        &__subwrapper {
+            place-items: baseline normal;
+        }
+    }
+    .reviews {
+        &__slider-prev, &__slider-next {
+            top: 48%;
+            transform: translateY(-48%);
+        }
+    }
+    .contactUs {
+        &__wrapper {
+            padding: 10px;
+        }
+        &__form-wrapper {
+            width: 100%;
+        }
+        .form-item {
+            width: 100%;
+        }
+        &__btn {
+            width: 130px;
+        }
+    }
+    .map {
+        &__descr {
+            width: 195px;
+            padding: 10px 0 10px 10px;
+        }
+    }
+    .footer {
+        &__company {
+            margin-left: 8px;
+            font-size: 14px;
+        }
+        &__contacts {
+            padding-bottom: 10px;
+        }
+        &__bottom {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__policy {
+            
+            text-align: center;
+            
+        }
+        
+        &__btn {
+            width: 130px;
+        }
+        &__phone {
+            font-size: 15px;
         }
     }
 }
