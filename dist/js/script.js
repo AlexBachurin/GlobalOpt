@@ -10,12 +10,24 @@
     speed: 500
   });
 
-  document.querySelector('.reviews__slider-prev').addEventListener('click', function() {
-    slider.goTo('prev');
-  });
-  document.querySelector('.reviews__slider-next').addEventListener('click', function() {
-    slider.goTo('next');
-  });
+  const prev = document.querySelectorAll('.reviews__slider-prev');
+  const next = document.querySelectorAll('.reviews__slider-next');
+  next.forEach(item => {
+    item.addEventListener('click', function() {
+      slider.goTo('next');
+    })
+  })
+  prev.forEach(item => {
+    item.addEventListener('click', function() {
+      slider.goTo('prev');
+    })
+  })
+  // document.querySelector('.reviews__slider-prev').addEventListener('click', function() {
+  //   slider.goTo('prev');
+  // });
+  // document.querySelector('.reviews__slider-next').addEventListener('click', function() {
+  //   slider.goTo('next');
+  // });
   
   //show Map Info
 

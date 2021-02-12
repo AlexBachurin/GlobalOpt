@@ -176,13 +176,6 @@
             }
         }
     }
-    .reviews {
-        &__slider-prev,
-        &__slider-next {
-            top: 52%;
-            transform: translateY(-52%);
-        }
-    }
     .contactUs {
         &__form-wrapper {
             display: flex;
@@ -258,11 +251,6 @@
     .reviews {
         &__slider-item {
             width: 100%;
-        }
-        &__slider-prev,
-        &__slider-next {
-            top: 50%;
-            transform: translateY(-50%);
         }
     }
     .map {
@@ -376,12 +364,6 @@
         }
         &__subwrapper {
             place-items: baseline normal;
-        }
-    }
-    .reviews {
-        &__slider-prev, &__slider-next {
-            top: 48%;
-            transform: translateY(-48%);
         }
     }
     .contactUs {
